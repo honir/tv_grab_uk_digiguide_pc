@@ -1,0 +1,54 @@
+tv_grab_uk_guardian
+===================
+
+XMLTV grabber for Digiguide for Windows PC program.
+
+
+
+INSTALLATION - Linux
+============
+
+1.
+Assumes you already have a working copy of "XMLTV".
+Copy the file tv_grab_uk_dgpc to /usr/bin/  (and make sure it has execute permission)
+
+(The above assumes the standard installation locations for XMLTV, if you have changed these then move the files appropriately.)
+
+2.
+To use this grabber you must have already installed a working copy of "Digiguide for Windows" (version 8.1 or newer). ( http://digiguide.tv/products/windows.asp )
+This will require an annual subscription to digiguide.tv epg service.
+
+3.
+Select the channels you wish to view: go to "Tools" : "Add/Remove Channels" in your "Digiguide for Windows" program.
+
+4.
+Then you must enable "Digiguide for Windows" "Web Service" via "Tools" menu : "Customise" : "Web Service". You need to close and re-open DigiGuide for these changes to take effect.  ( http://helpdesk.digiguide.tv/solution.asp?s=164&sl=174 )
+
+(With the default settings you should be able to get to your browser version using the following URL: http://localhost:2402/ )
+
+5.
+You must put the "xmltv" web skin into your Digiguide program"s directory. 
+E.g. something like
+"C:\Program Files\DigiGuide TV Guide\schemes\server skins\"
+Move the file xmltv.dgscheme-web into this directory. 
+
+(If you can"t find that directory then try searching for "web.dgscheme-web" - that will be the directory you want.)
+
+6.
+Grabber configuration consists of the usual:  
+    tv_grab_uk_dgpc --configure
+
+Note: you will only be able to grab channels which you have currently selected within "Digiguide for Windows".
+
+
+
+USAGE
+=====
+
+All the normal XMLTV capabilities are included.
+
+For extended help information run
+
+    tv_grab_uk_dgpc --info
+		
+	
